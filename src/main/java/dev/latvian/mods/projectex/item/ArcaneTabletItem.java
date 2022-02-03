@@ -56,7 +56,7 @@ public class ArcaneTabletItem extends Item {
 
 		@Override
 		public AbstractContainerMenu createMenu(int windowId, @Nonnull Inventory playerInventory, @Nonnull Player player) {
-			return new TransmutationContainer(windowId, playerInventory, this.hand, 0);
+			return new TransmutationContainer(windowId, playerInventory, this.hand, playerInventory.selected);
 		}
 
 		@Override
